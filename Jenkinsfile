@@ -32,7 +32,7 @@ pipeline {
         }
         stage("deploy"){
             steps{
-                sh "docker-compose down && docker-compose up -d"
+               sh "docker run -d -p 4000:4000 sonuh/notes-app"
                 echo 'deployment ho gayi'
             }
         }
