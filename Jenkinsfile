@@ -32,7 +32,7 @@ pipeline {
         }
         stage("deploy"){
             steps{
-               sh "docker run -d -p 4000:4000 sonuh/notes-app"
+               sh "docker run -d -p 4000:4000 sonuh/notes-app-test-new"
                 echo 'deployment ho gayi'
             }
         }
